@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Fotos para diferentes tipos de midia.</h1>
+    <p>Aqui algumas fotos que mudarão de tamanho de acordo com a necessidade do usuario.</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 900px)" srcset="Imagens/foto-m.png" type="image/png">
+       <img src="Imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+    <h2>Adicionando Audio no html</h2>
+    <audio src="midia/testaudio.ogg" controls autoplay></audio>
+</body>
+</html>

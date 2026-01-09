@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editando colunas de uma tabela</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+    }
+
+    caption{
+        font-size: 1.5;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    tr,th,td{
+        border: 1px solid black;
+        width: 100px;
+        text-align: center;
+    }
+
+    col.cnome{
+        background-color: aqua;
+    }
+
+    div{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+
+        border-radius: 25px;
+    }
+
+    div:hover{
+        width: 600px;
+        transition: 0.5s;
+    }
+
+
+</style>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gabriel</td>
+                <td>M</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Fracisco</td>
+                    <td>M</td>
+                    <td>Engenheiro</td>
+                </tr>
+            </tr>
+            <tr>
+                <tr>
+                    <td>José</td>
+                    <td>M</td>
+                    <td>Professor</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <div class="bof">
+
+    </div>
+</body>
+</html>
